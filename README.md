@@ -1,1 +1,1 @@
-# js-indexdb-logger
+# indexdb-logger
