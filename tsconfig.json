@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "amd",
     "target": "es5",
     "outDir": "dist",
     "baseUrl": ".",
@@ -10,6 +10,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "skipLibCheck": true,
@@ -17,7 +18,7 @@
     "paths": {
       "@/*": ["src"]
     },
-    "lib": ["esnext", "scripthost"]
+    "lib": ["DOM", "esnext", "scripthost"]
   },
   "include": ["src", "types"],
   "exclude": ["node_modules"]
