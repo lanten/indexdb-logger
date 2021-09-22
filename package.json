@@ -12,7 +12,7 @@
   "scripts": {
     "pu": "npm run build && npm publish --access=public",
     "build": "tsc -d",
-    "dev": "webpack serve -c demo/webpack.config.js --hot"
+    "dev": "webpack serve -c demo/webpack.config.js --hot --port 3000"
   },
   "devDependencies": {
     "@types/node": "^16.7.10",
@@ -40,5 +40,8 @@
   "bugs": {
     "url": "https://github.com/lanten/js-indexdb-logger/issues"
   },
-  "homepage": "https://github.com/lanten/js-indexdb-logger#readme"
+  "homepage": "https://github.com/lanten/js-indexdb-logger#readme",
+  "dependencies": {
+    "localforage": "^1.10.0"
+  }
 }

@@ -1,13 +1,12 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 const rootPath = process.cwd()
 
 /** @type {import('webpack').Configuration} */
 const webpackConfig = {
   target: 'web',
   mode: 'development',
-  entry: path.join(rootPath, 'src/index.ts'),
+  entry: path.join(rootPath, 'src/demo.ts'),
 
   output: {
     publicPath: '',
